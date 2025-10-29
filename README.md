@@ -11,3 +11,4 @@ Tasks
 0. Gather data from an API
 
 0-gather_data_from_an_API.py: A Python script that, for a given employee ID, fetches and displays their TODO list progress from the JSONPlaceholder API.
+
