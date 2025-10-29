@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 A script that, for a given employee ID, fetches TODO list data
 and exports it in JSON format.
@@ -70,5 +69,3 @@ if __name__ == "__main__":
                 KeyError) as e:
             # Handle potential network, HTTP, JSON, or key errors
             pass
-
-
