@@ -1,4 +1,4 @@
-Project: alu-back-end
+Project: alu-back-end.
 
 This repository contains back-end projects, including scripts for interacting with REST APIs.
 
