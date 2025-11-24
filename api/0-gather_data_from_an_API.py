@@ -21,12 +21,12 @@ if __name__ == "__main__":
     # 1. Fetch User Information (to get the name)
     user_url = "{}/users/{}".format(base_url, employee_id)
     user_response = requests.get(user_url)
-    
+
     # Check if user exists
     if user_response.status_code != 200:
         print("User not found")
         sys.exit(1)
-        
+
     user_data = user_response.json()
     employee_name = user_data.get("name")
 
