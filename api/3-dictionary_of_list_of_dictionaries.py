@@ -20,10 +20,10 @@ if __name__ == "__main__":
     for user in users:
         user_id = user.get("id")
         username = user.get("username")
-        
+
         # Filter tasks for this user
         user_tasks = [task for task in todos if task.get("userId") == user_id]
-        
+
         # Format the tasks list
         formatted_tasks = []
         for task in user_tasks:
@@ -32,7 +32,7 @@ if __name__ == "__main__":
                 "task": task.get("title"),
                 "completed": task.get("completed")
             })
-            
+
         # Add to main dictionary (key must be string for JSON)
         todo_all[str(user_id)] = formatted_tasks
 
